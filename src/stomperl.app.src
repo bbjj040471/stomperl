@@ -1,0 +1,21 @@
+{application, stomperl,
+  [{vsn, "0.1.0"},
+    {modules, [
+      log,
+      rand,
+      mailer,
+      message_queue,
+      socket_wrapper,
+      stomp_frame,
+      subscription,
+      tcp_acceptor,
+      tcp_client_sup,
+      tcp_server,
+      tcp_server_sup,
+      tcp_stomp,
+      transaction
+    ]},
+    {registered, [stomperl_app]},
+    {mod, {stomperl_app, []}},
+    {applications, [kernel, stdlib]}
+  ]}.
